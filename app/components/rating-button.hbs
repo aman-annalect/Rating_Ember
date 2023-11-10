@@ -1,0 +1,3 @@
+<button {{on "click" (fn @onRatingChange @ratingValue)  }} class="btn ratings-btn btn-lg {{if (eq @ratingValue @selectedRating) 'active'}}" type="button">
+  {{@ratingValue}}
+</button>

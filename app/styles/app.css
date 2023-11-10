@@ -1,1 +1,61 @@
-/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+body {
+  background-color: #141519 !important;
+}
+
+.main-container {
+  height: 100vh;
+}
+
+.h2 {
+  color: #fafdff !important;
+}
+
+.h6 {
+  color: #838993;
+}
+
+.rating-container {
+  background-color: #202731;
+  width: 350px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.submit-button {
+  border-radius: 20px;
+  background-color: orange;
+  color: white;
+}
+
+.ratings-btn:hover,
+.submit-button:hover {
+  background-color: white;
+  color: orange;
+}
+
+.ratings-btn {
+  border-radius: 50%;
+  background-color: #262f38;
+  color: #646d76;
+}
+.ratings-btn.active {
+  border-radius: 50%;
+  background-color: #7d8797;
+  color: white;
+  border: none;
+}
+.rating-modal{
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.selected-text{
+  display: block;
+  color: orange;
+  background-color: #272938;
+  border-radius: 40px;
+  padding: 10px;
+  margin: 20px;
+}

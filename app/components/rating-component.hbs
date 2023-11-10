@@ -1,0 +1,24 @@
+<div class="d-flex justify-content-center align-items-center main-container">
+  <div class="rating-container">
+    <div>
+      <button class="btn ratings-btn btn-lg mb-4" type="button">
+        <img class="mb-2" src="/icon-star.svg" alt="">
+      </button>
+      <span class="h2 d-block mb-3">
+        How Did We do?
+      </span>
+      <span class="h6 mb-4  d-block">
+        Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+      </span>
+      <div class="rating-buttons mb-4  d-flex justify-content-between">
+        {{#each this.ratings as |rating|}}
+          <RatingButton @ratingValue={{rating}} @onRatingChange={{this.changeSelectedRating}} @selectedRating={{this.seletedRating}}/>
+        {{/each}} 
+      </div>
+      <button {{on 'click' this.changeRating}}  class="submit-button btn w-100" type="button"> SUBMIT </button>
+      {{#if this.showModal}}
+      <RatingModal @rating={{this.rating}}/>
+      {{/if}}
+    </div>
+  </div>
+</div>
